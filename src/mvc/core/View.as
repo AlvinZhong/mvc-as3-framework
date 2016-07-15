@@ -16,8 +16,5 @@ package mvc.core
 		public function retrieveMediator(mediatorName:String):IMediator{
 			return mediatorMap[mediatorName];
 		}
-		public function removeMediator(mediatorName:String):Boolean{
-			return true;
-		}
 	}
 }
