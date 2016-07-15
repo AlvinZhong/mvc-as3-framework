@@ -19,10 +19,5 @@ package mvc.core
 		public function registerCommand(notificationName:String,commandClassRef:*):void{
 			commandMap[notificationName] = commandClassRef;
 		}
-		public function executeComand(notification:INotification):void{
-			var commandClassRef:* = commandMap[notification.getName()];
-			var command:ICommand = new commandClassRef();
-			command.execute(notification);
-		}
 	}
 }
