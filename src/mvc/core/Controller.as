@@ -17,7 +17,11 @@ package mvc.core
 		}
 		
 		public function registerCommand(notificationName:String,commandClassRef:*):void{
-			commandMap[notificationName] = commandClassRef;
+			if(commandMap[notificationName] != null) {
+		 		commandMap.push(commandClassRef);
+		 	}else{
+		  		cpmmandMap[notificationName] = [commandClassRef];   
+		 	}
 		}
 	}
 }
