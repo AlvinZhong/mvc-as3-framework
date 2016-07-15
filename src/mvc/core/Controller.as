@@ -20,7 +20,7 @@ package mvc.core
 			if(commandMap[notificationName] != null) {
 		 		commandMap.push(commandClassRef);
 		 	}else{
-		  		cpmmandMap[notificationName] = [commandClassRef];   
+		  		commandMap[notificationName] = [commandClassRef];   
 		 	}
 		}
 	}
